@@ -62,3 +62,5 @@ unit
 vgcore*
 *.xz
 *.exe
+.dirstamp
+.deps
