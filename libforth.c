@@ -646,7 +646,7 @@ enum header { /**< Forth header description enum */
 	MAGIC2,     /**< Magic number ... */
 	MAGIC3,     /**< Magic number ...  */
 	CELL_SIZE,  /**< Size of a Forth cell, or virtual machine word */
-	VERSION,    /**< Version of the image */
+	VVERSION,    /**< Version of the image */
 	ENDIAN,     /**< Endianess of the interpreter */
 	LOG2_SIZE,  /**< Log-2 of the size */
 	MAX_HEADER_FIELD
@@ -663,7 +663,7 @@ static const uint8_t header[MAX_HEADER_FIELD] = {
 	[MAGIC2]    = 'T',
 	[MAGIC3]    = 'H',
 	[CELL_SIZE] = sizeof(forth_cell_t),
-	[VERSION]   = FORTH_CORE_VERSION,
+	[VVERSION]   = FORTH_CORE_VERSION,
 	[ENDIAN]    = -1,
 	[LOG2_SIZE]  = -1 
 };
